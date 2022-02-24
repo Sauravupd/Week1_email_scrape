@@ -9,11 +9,9 @@ with open('websiteData.txt','r',encoding='UTF-8') as file:
     for email in df['Emails']:
         print(email)
         first_part = email.split('@')
-        if '.' in first_part[0]:
+        if '.' in first_part[0] and len(first_part[0]) >= 8:
             type.append('Human')
         
-        elif len(first_part[0]) < 8:
-            type.append('Non-Human')
         else:
             type.append('Non-Human')
     
