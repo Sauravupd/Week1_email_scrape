@@ -15,7 +15,7 @@ with open('websiteData.txt','r',encoding='UTF-8') as file:
         elif len(first_part[0]) < 8:
             type.append('Non-Human')
         else:
-            type.append('Human')
+            type.append('Non-Human')
     
     
         
